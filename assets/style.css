@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #172033;
+}
+
+
+header {
+
+    height: 70px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #ddd;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    padding:
+        0 6%;
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+nav {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+nav a {
+
+    color: #172033;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+main {
+
+    max-width:
+        1200px;
+
+    margin: auto;
+
+    padding:
+        40px 20px;
+
+}
+
+
+.hero {
+
+    padding:
+        60px 0;
+
+}
+
+
+.tag {
+
+    color:
+        #2457d6;
+
+    font-weight:
+        bold;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        52px;
+
+    line-height:
+        1.05;
+
+    margin:
+        15px 0;
+
+}
+
+
+.hero p {
+
+    max-width:
+        700px;
+
+    font-size:
+        18px;
+
+    color:
+        #667085;
+
+    line-height:
+        1.6;
+
+}
+
+
+.botao {
+
+    display:
+        inline-block;
+
+    background:
+        #2457d6;
+
+    color:
+        white;
+
+    padding:
+        14px 22px;
+
+    border-radius:
+        10px;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+
+}
+
+
+.estatisticas {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        20px;
+
+}
+
+
+.card {
+
+    background:
+        white;
+
+    padding:
+        25px;
+
+    border-radius:
+        15px;
+
+    border:
+        1px solid #e5e7eb;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.04);
+
+}
+
+
+.card h3 {
+
+    color:
+        #667085;
+
+}
+
+
+.card strong {
+
+    font-size:
+        32px;
+
+}
+
+
+footer {
+
+    text-align:
+        center;
+
+    padding:
+        30px;
+
+    color:
+        #667085;
+
+    border-top:
+        1px solid #ddd;
+
+}
+
+
+input,
+select,
+textarea {
+
+    width:
+        100%;
+
+    padding:
+        12px;
+
+    border:
+        1px solid #ccd2dd;
+
+    border-radius:
+        8px;
+
+    font-size:
+        15px;
+
+}
+
+
+textarea {
+
+    min-height:
+        130px;
+
+}
+
+
+form {
+
+    max-width:
+        700px;
+
+}
+
+
+label {
+
+    display:
+        block;
+
+    font-weight:
+        bold;
+
+    margin-top:
+        18px;
+
+    margin-bottom:
+        7px;
+
+}
+
+
+button {
+
+    margin-top:
+        20px;
+
+    background:
+        #2457d6;
+
+    color:
+        white;
+
+    border:
+        none;
+
+    padding:
+        13px 20px;
+
+    border-radius:
+        8px;
+
+    cursor:
+        pointer;
+
+    font-weight:
+        bold;
+
+}
+
+
+@media(max-width:800px) {
+
+    .estatisticas {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    header {
+
+        padding:
+            0 15px;
+
+    }
+
+    nav {
+
+        gap:
+            8px;
+
+    }
+
+    nav a {
+
+        font-size:
+            12px;
+
+    }
+
+    .hero h1 {
+
+        font-size:
+            38px;
+
+    }
+
+    .estatisticas {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
